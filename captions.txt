@@ -1,0 +1,4 @@
+1|Caption for photo 1
+2|Caption for photo 2
+3|Caption for photo 3
+4|Caption for photo 4
