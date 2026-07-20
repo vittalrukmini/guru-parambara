@@ -197,9 +197,10 @@
       color: var(--navy);
       font-family: 'Cormorant Garamond', serif;
       font-size: 16px; font-style: italic;
-      padding: 6px 20px; border-radius: 20px;
+      padding: 6px 20px; border-radius: 14px;
       backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      max-height: 80px; overflow-y: auto;
+      line-height: 1.5;
       transition: opacity .4s ease;
     }
 
