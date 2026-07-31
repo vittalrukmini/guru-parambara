@@ -662,14 +662,9 @@ function buildGallery(g) {
   function applyMusic(fileId) {
     var url = 'https://www.googleapis.com/drive/v3/files/'
       + fileId + '?alt=media&key=' + API_KEY;
-    fetch(url)
-      .then(function(r) { return r.ok ? r.blob() : Promise.reject(); })
-      .then(function(blob) {
-        music.src = URL.createObjectURL(blob);
-        music.loop = true;
-        document.getElementById('musicBtn').style.display = 'flex';
-      })
-      .catch(function() {});
+    music.src = url;
+    music.load();
+    document.getElementById('musicBtn').style.display = 'flex';
   }
 
   function startMusic() {
